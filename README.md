@@ -40,9 +40,10 @@ Building an off the shelf drone is fun, but designing the core avionics from the
 | C11, C12, C13 | 1µF | C52923 | Decoupling capacitors |
 | C14 | 10µF | C15525 | Bulk capacitor |
 | C15, C16, C17, C18, C19 | 100nF | C5142565 | Decoupling capacitors |
-| R1 | 10kΩ | C54530535 | BOOT0 pull-down |
-| R4, R5 | 5.1kΩ | C23186 | USB-C resistors |
-| R2, R3 | 470Ω | C23179 | LED resistors |
+| R1 | 10k | C54530535 | BOOT0 pull-down |
+| R4, R5 | 5.1k | C23186 | USB-C resistors |
+| R2, R3 | 470 | C23179 | LED resistors |
+| J1 | USB_C_Receptacle_USB2.0_16P | C9900184415 | USB C Connector |
 | PCB | | | https://jlcpcb.com/ |
 
 ## Tools & Technologies
