@@ -19,22 +19,32 @@ Building an off the shelf drone is fun, but designing the core avionics from the
 - Aerospace Passion: As a personal stepping stone for aerospace and rocketry drone payloads having total control over a custom flight controller design opens up endless possibilities for tailored form factors.
 - Just for Fun: Pure engineering curiosity testing whether a self routed PCB built in KiCAD can successfully boot, communicate, and stabilize a flight platform. (As of now, it's a first prototype fingers crossed that everything works as intended!)
 
-## Bill of Materials
+## BOM
 
-| Designator | Component | Footprint | LCSC Part Number | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| U2 | STM32F411CEU6 | QFN-48 (7x7mm) | C60420 | Main MCU |
-| U4 | BMI270 | 14-LGA (3x2.5mm) | C2836813 | Gyro + Accel |
-| U3 | ME6211C33M5G-N | SOT-23-5 | C82942 | 3.3V Voltage Regulator |
-| J1 | USB4105-GF-A-120 | USB-C 16-Pin SMT | C5184243 | USB-C Receptacle |
-| Y1 | 16MHz Crystal | SMD 3225-4P | C13738 | Crystal Oscillator |
-| C5, C6 | 10µF | 0603 (1608 Metric) | C19702 | Ceramic Capacitor |
-| C7 | 2.2µF | 0603 (1608 Metric) | C23630 | Ceramic Capacitor |
-| D1, D2 | LED | 0603 (1608 Metric) | C2290 | Status / Power LEDs |
-| R3 | 1MΩ | 0603 (1608 Metric) | C22935 | Resistor |
-| R4, R5 | 5.1kΩ | 0603 (1608 Metric) | C23186 | USB-C Resistors |
-| R6, R7 | 10kΩ | 0603 (1608 Metric) | C25804 | Config Resistors |
-| R8, R9 | 1kΩ | 0603 (1608 Metric) | C21190 | LED Current Limiting Resistors |
+| Designator | Component | LCSC Part Number | Description |
+| :--- | :--- | :--- | :--- |
+| U1 | STM32F722RET6 | C118207 | Main MCU |
+| U4 | BMI270 | C2836813 | Gyro and accelerometer |
+| U2 | AMS1117-3.3 | TBD | 3.3V regulator |
+| J1 | USB4105-GF-A-120 | C5184243 | USB-C receptacle |
+| J2 | 2-pin pad | TBD | 5V input |
+| X1 | X322525MOB4SI | C9006 | 25MHz crystal |
+| X2 | Q13FC1350000400 | C32346 | 32.768kHz crystal |
+| L1 | FCM1608KF-601T03 | C141723 | Ferrite bead |
+| D1, D2 | XL-1608SURC-06 | C965799 | Status LEDs |
+| D3, D4 | Schottky diode | TBD | Input diodes |
+| SW1, SW2 | TS-1088-AR02016 | C720477 | BOOT and RESET buttons |
+| C1, C2, C3 | 100nF | C1525 | Decoupling capacitors |
+| C4, C7, C8, C9 | 20pF | C1554 | Crystal load capacitors |
+| C5 | 22µF | TBD | Regulator output capacitor |
+| C6 | 10µF | C19702 | Regulator input capacitor |
+| C10 | 2.2µF | C386031 | VCAP capacitor |
+| C11, C12, C13 | 1µF | C52923 | Decoupling capacitors |
+| C14 | 10µF | C15525 | Bulk capacitor |
+| C15, C16, C17, C18, C19 | 100nF | C5142565 | Decoupling capacitors |
+| R1 | 10kΩ | C54530535 | BOOT0 pull-down |
+| R4, R5 | 5.1kΩ | C23186 | USB-C CC resistors |
+| R2, R3 | 470Ω | C23179 | LED resistors |
 
 ## Tools & Technologies
 
