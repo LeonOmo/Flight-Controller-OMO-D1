@@ -1,24 +1,21 @@
-# Flight-Controller-OMO-D1
+# Flight-Controller-FC-D1
 
-A custom designed, minimalistic STM32F411-based flight controller built from scratch for custom drone and aerospace experimentation.
+A custom designed, minimalistic STM32F722RET6 based flight controller built from scratch for custom drone and aerospace experimentation.
 
 ## What is this project?
 
-Flight Controller OMO: is a custom made circuit board designed specifically to act as an stabilization unit for stabilising platforms. It breaks away from bulky flight controllers by packing only the essential, minimal form factor powered by an STM32 microcontroller and a modern BMI270.
+Flight Controller D1: is a custom made circuit board designed specifically to act as an stabilization unit for stabilising platforms. It breaks away from bulky flight controllers by packing only the essential, minimal form factor powered by an STM32 microcontroller and a modern BMI270.
 
 ## Purpose & What it does
 
-The primary purpose of this board is to process real-time orientation data and translate pilot control inputs into precise motor commands. 
+The primary purpose of this board is to process orientation data. 
 - Attitude: Reads high speed gyro and accelerometer data via the BMI270 sensor to keep the aircraft stable.
 - Motor Control: Provides 4 dedicated motor output attachments to drive electronic speed controllers (ESCs) or micro motors.
-- Firmware: Designed to run standard flight controller firmware like Betaflight.
-- Flashing: Includes a 12 pin USB-C interface for seamless connection to a PC for configuration and flashing.
 
 ## Why does it exist?
 
 Building an off the shelf drone is fun, but designing the core avionics from the ground up teaches you how hardware, firmware, and circuit layout actually interact in the real world. 
 
-- The Learning Curve: Moving away from older, obsolete sensors like the MPU6050 to the modern BMI270 was a major step in modernizing the design.
 - Aerospace Passion: As a personal stepping stone for aerospace and rocketry drone payloads having total control over a custom flight controller design opens up endless possibilities for tailored form factors.
 - Just for Fun: Pure engineering curiosity testing whether a self routed PCB built in KiCAD can successfully boot, communicate, and stabilize a flight platform. (As of now, it's a first prototype fingers crossed that everything works as intended!)
 
@@ -42,20 +39,19 @@ Building an off the shelf drone is fun, but designing the core avionics from the
 ## Tools & Technologies
 
 - PCB Design: KiCAD
-- Firmware: Betaflight
-- Design Highlights: Features a custom silkscreen layout including things like Mewo.
+- Firmware: None yet but with STm32cube
 
 ## Schematics & PCB Layout
 
 ## Schematic
 
-<img width="525" height="641" alt="Schematic Overview" src="https://github.com/user-attachments/assets/f63c56b4-273c-4061-a75c-507f337dad24" />
-<img width="544" height="262" alt="Power & MCU Details" src="https://github.com/user-attachments/assets/98c3d2bc-819a-4625-8390-9b1c7c13e985" />
+<img width="654" height="718" alt="image" src="https://github.com/user-attachments/assets/0ccd47c8-bb88-4641-b110-fde66d676c08" />
+<img width="479" height="636" alt="image" src="https://github.com/user-attachments/assets/757a7c8d-2c98-4bb6-ac80-7dbd220b2024" />
 
 ## PCB
 
-<img width="590" height="470" alt="PCB Top View" src="https://github.com/user-attachments/assets/beaa8b7b-2234-4282-ad69-a504e8533080" />
-<img width="590" height="470" alt="PCB Bottom View" src="https://github.com/user-attachments/assets/41b5ce0c-abc6-49dc-96f1-d5257a507132" />
+<img width="1214" height="832" alt="image" src="https://github.com/user-attachments/assets/121fea66-65ed-47fa-9150-e888cc171839" />
+<img width="904" height="629" alt="image" src="https://github.com/user-attachments/assets/0155aa55-e14f-4b08-951f-af8e774156b9" />
 
 ## Extras
 
