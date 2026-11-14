@@ -25,18 +25,16 @@ Building an off the shelf drone is fun, but designing the core avionics from the
 | :--- | :--- | :--- | :--- |
 | U1 | STM32F722RET6 | C118207 | Main MCU |
 | U4 | BMI270 | C2836813 | Gyro and accelerometer |
-| U2 | AMS1117-3.3 | TBD | 3.3V regulator |
-| J1 | USB4105-GF-A-120 | C5184243 | USB-C receptacle |
-| J2 | 2-pin pad | TBD | 5V input |
+| U2 | AMS1117-3.3 | C5632159 | 3.3V regulator |
 | X1 | X322525MOB4SI | C9006 | 25MHz crystal |
 | X2 | Q13FC1350000400 | C32346 | 32.768kHz crystal |
 | L1 | FCM1608KF-601T03 | C141723 | Ferrite bead |
 | D1, D2 | XL-1608SURC-06 | C965799 | Status LEDs |
-| D3, D4 | Schottky diode | TBD | Input diodes |
+| D3, D4 | Schottky diode | C7370889 | Input diodes |
 | SW1, SW2 | TS-1088-AR02016 | C720477 | BOOT and RESET buttons |
 | C1, C2, C3 | 100nF | C1525 | Decoupling capacitors |
 | C4, C7, C8, C9 | 20pF | C1554 | Crystal load capacitors |
-| C5 | 22µF | TBD | Regulator output capacitor |
+| C5 | 22µF | C59461 | Regulator output capacitor |
 | C6 | 10µF | C19702 | Regulator input capacitor |
 | C10 | 2.2µF | C386031 | VCAP capacitor |
 | C11, C12, C13 | 1µF | C52923 | Decoupling capacitors |
