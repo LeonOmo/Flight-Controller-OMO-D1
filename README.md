@@ -62,3 +62,9 @@ I liked this way more than id like to admit making this was really fun for me an
 Before settling on the BMI270, early iterations used the older MPU6050. Transitioning away from it was a major hurdle due to its age and lack of modern integration support, making the shift to the BMI270 a much cleaner and more reliable choice for modern layouts.
 
 <img width="431" height="397" alt="Old MPU6050 Iteration" src="https://github.com/user-attachments/assets/0b2d92ee-48ac-4365-8c29-1a148eaae829" />
+
+Also an old version of the FC.
+
+<img width="694" height="539" alt="Screenshot 2026-11-13 192732" src="https://github.com/user-attachments/assets/0f926eb9-1968-44eb-b124-582737e4d41a" />
+
+
